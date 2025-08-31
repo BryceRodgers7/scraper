@@ -31,11 +31,11 @@ def export_table_to_csv(cursor, table_name, output_dir):
 
 def main():
     # Create output directory if it doesn't exist
-    output_dir = "db_exports"
+    output_dir = "db_exports_v2"
     os.makedirs(output_dir, exist_ok=True)
     
     # Connect to the database
-    conn = sqlite3.connect('vbdata.db')
+    conn = sqlite3.connect('vbdatav2.db')
     cursor = conn.cursor()
     
     # Get list of all tables
@@ -49,7 +49,7 @@ def main():
     # Close the connection
     conn.close()
     
-    print("\nExport complete! Files are in the 'db_exports' directory.")
+    print("\nExport complete! Files are in the 'db_exports_v2' directory.")
 
 if __name__ == "__main__":
     main()

@@ -6,7 +6,7 @@ import os
 
 # Database initialization
 def init_database():
-    conn = sqlite3.connect('vbdata.db')
+    conn = sqlite3.connect('vbdatav2.db')
     cursor = conn.cursor()
     
     # Create events table
@@ -74,6 +74,7 @@ def init_database():
         set2_team2_score INTEGER,
         set3_team1_score INTEGER,
         set3_team2_score INTEGER,
+        match_datetime TEXT,
         FOREIGN KEY (team1_id) REFERENCES teams(teamId),
         FOREIGN KEY (team2_id) REFERENCES teams(teamId)
     )
@@ -241,6 +242,7 @@ def getMatchData(urls):
                 second_team = match["Match"]["SecondTeamName"]
                 second_team_id = match["Match"]["SecondTeamId"]
                 second_team_won = match["Match"]["SecondTeamWon"]
+                match_datetime = match["Match"]["ScheduledStartDateTime"]
                 
                 # Initialize set scores
                 set1_team1 = set1_team2 = set2_team1 = set2_team2 = set3_team1 = set3_team2 = None
@@ -263,13 +265,15 @@ def getMatchData(urls):
                     bracket, team1_id, team2_id, team2_won,
                     set1_team1_score, set1_team2_score,
                     set2_team1_score, set2_team2_score,
-                    set3_team1_score, set3_team2_score
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    set3_team1_score, set3_team2_score,
+                    match_datetime
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ''', (
                     bracket, first_team_id, second_team_id, second_team_won,
                     set1_team1, set1_team2,
                     set2_team1, set2_team2,
-                    set3_team1, set3_team2
+                    set3_team1, set3_team2,
+                    match_datetime
                 ))
 
                 print(f"Added match: {first_team} vs {second_team}")
@@ -286,8 +290,46 @@ try:
     getEventData(event_url)
     getDivisionsForTourney(division_urls)
     getMatchData(match_urls)
+    
+    # Remove duplicate matches
+    remove_duplicate_matches()
 finally:
     conn.close()
+
+def remove_duplicate_matches():
+    """Remove duplicate matches where team1_id and team2_id are swapped"""
+    print("Removing duplicate matches...")
+
+    # Get total count after cleanup
+    cursor.execute("SELECT COUNT(*) FROM matches")
+    total_matches = cursor.fetchone()[0]
+    print(f"Total matches before cleanup: {total_matches}")
+    
+    # Find duplicates where team1_id and team2_id are swapped
+    cursor.execute('''
+    DELETE FROM matches 
+    WHERE matchId IN (
+        SELECT m1.matchId
+        FROM matches m1
+        JOIN matches m2 ON (
+            m1.team1_id = m2.team2_id 
+            AND m1.team2_id = m2.team1_id 
+            AND m1.bracket = m2.bracket
+            AND m1.match_datetime = m2.match_datetime
+            AND m1.matchId > m2.matchId
+        )
+    )
+    ''')
+    
+    deleted_count = cursor.rowcount
+    conn.commit()
+    
+    print(f"Removed {deleted_count} duplicate matches")
+    
+    # Get total count after cleanup
+    cursor.execute("SELECT COUNT(*) FROM matches")
+    total_matches = cursor.fetchone()[0]
+    print(f"Total matches remaining: {total_matches}")
 
 
 

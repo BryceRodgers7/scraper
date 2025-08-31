@@ -25,6 +25,10 @@ def update_elo(rating_a, rating_b, result_a, k=32):
     return new_rating_a, new_rating_b
 
 
+# select matches ordered by eventId.startDate
+# will need to scrape more data in order to get a match_datetime
+
+
 # run through matches and update elo
 cursor.execute("SELECT * FROM matches ORDER BY matchId")
 matches = cursor.fetchall()
