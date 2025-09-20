@@ -3,10 +3,11 @@ import csv
 import time
 import sqlite3
 import os
+from datetime import datetime
 
 # Database initialization
 def init_database():
-    conn = sqlite3.connect('vbdatav2.db')
+    conn = sqlite3.connect('vbdatav3.db')
     cursor = conn.cursor()
     
     # Create events table
@@ -39,7 +40,8 @@ def init_database():
         teamName TEXT,
         teamCode TEXT,
         clubId TEXT,
-        clubName TEXT
+        clubName TEXT,
+        teamAge INTEGER
     )
     ''')
 
@@ -74,7 +76,7 @@ def init_database():
         set2_team2_score INTEGER,
         set3_team1_score INTEGER,
         set3_team2_score INTEGER,
-        match_datetime TEXT,
+        match_datetime DATETIME,
         FOREIGN KEY (team1_id) REFERENCES teams(teamId),
         FOREIGN KEY (team2_id) REFERENCES teams(teamId)
     )
@@ -91,12 +93,51 @@ cursor = conn.cursor()
 # event_url = ["https://results.advancedeventsystems.com/api/event/PTAwMDAwMzY3OTY90", "https://results.advancedeventsystems.com/api/event/PTAwMDAwMzY3OTY91", "https://results.advancedeventsystems.com/api/event/PTAwMDAwMzY3OTY92"]
 
 # single event url
-event_url = ["https://results.advancedeventsystems.com/api/event/PTAwMDAwMzY3OTY90"]
+# event_url = ["https://results.advancedeventsystems.com/api/event/PTAwMDAwMzY3OTY90"]
 
 # getEventData() and getDivisionsForTourney() will populate these two lists automatically
 division_urls = []
 match_urls = []
 
+
+
+def getEventList():
+
+    # url = 'https://www.advancedeventsystems.com/api/landing/events?$count=true&$filter=(isSchedulerPosted+eq+true+and+(startDate+lt+2025-09-01T05:00:00%2B00:00+and+endDate+ge+2024-09-01T05:00:00%2B00:00)+and+isPastEvent+eq+true+and+eventType%2FeventTypeId+eq+11)&$format=json&$orderby=startDate+desc,name&$top=100'
+    url = 'https://www.advancedeventsystems.com/api/landing/events?$count=true&$filter=(isSchedulerPosted+eq+true+and+(startDate+lt+2025-09-01T05:00:00%2B00:00+and+endDate+ge+2024-09-01T05:00:00%2B00:00)+and+isPastEvent+eq+true+and+affiliation%2FeventAffiliationId+eq+250004+and+address%2Fstate%2FstateId+eq+43)&$format=json&$orderby=startDate+desc,name&$top=100'
+
+    print(f"Fetching event data from: {url}")
+    
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36", 
+        "Accept": "application/json, text/plain, */*",
+    }
+    
+    try:
+        response = requests.get(url, headers=headers)
+        
+        if response.status_code == 200:
+            data = response.json()
+            
+            # Extract eventSchedulerKey values from the 'value' array
+            event_keys = []
+            if 'value' in data and isinstance(data['value'], list):
+                for event in data['value']:
+                    if 'eventSchedulerKey' in event and event['eventSchedulerKey']:
+                        event_keys.append(event['eventSchedulerKey'])
+            
+            print(f"Total eventSchedulerKey values found: {len(event_keys)}")
+
+            for event_key in event_keys:
+                event_url = f'https://results.advancedeventsystems.com/api/event/{event_key}'
+                event_urls.append(event_url)
+                print(event_url)
+
+            return event_urls
+            
+        else:
+            print(f"Failed to fetch data: HTTP {response.status_code}")
+            return []
 
 
 # get a list of division urls from an event
@@ -186,13 +227,25 @@ def getDivisionsForTourney(urls):
                 overallRank = team["OverallRank"]
                 matchUrl = f'https://results.advancedeventsystems.com/api/event/{eventJibberish}/division/{divisionId}/team/{teamId}/schedule/past'
 
+                # Extract age from teamCode (2nd and 3rd characters)
+                teamAge = None
+                if teamCode and len(teamCode) >= 3:
+                    try:
+                        age_str = teamCode[1:3]  # Extract 2nd and 3rd characters
+                        teamAge = int(age_str)
+                    except ValueError:
+                        print(f"Warning: Could not parse age from teamCode '{teamCode}'")
+                        teamAge = None
+                else:
+                    print(f"Warning: teamCode '{teamCode}' is too short to extract age")
+
                 # Insert team data into teams table
                 cursor.execute('''
                 INSERT OR REPLACE INTO teams (
-                    teamId, teamName, teamCode, clubId, clubName
-                ) VALUES (?, ?, ?, ?, ?)
+                    teamId, teamName, teamCode, clubId, clubName, teamAge
+                ) VALUES (?, ?, ?, ?, ?, ?)
                 ''', (
-                    teamId, teamName, teamCode, clubId, clubName
+                    teamId, teamName, teamCode, clubId, clubName, teamAge
                 ))
 
                 # Insert enrollment data into enrollments table
@@ -259,6 +312,13 @@ def getMatchData(urls):
                         set3_team1 = set_score["FirstTeamScore"]
                         set3_team2 = set_score["SecondTeamScore"]
 
+                # Parse datetime string to datetime object
+                try:
+                    parsed_datetime = datetime.fromisoformat(match_datetime)
+                except Exception as e:
+                    print(f"Warning: Invalid datetime format '{match_datetime}': {e}")
+                    parsed_datetime = None
+                
                 # Insert match data
                 cursor.execute('''
                 INSERT INTO matches (
@@ -273,7 +333,7 @@ def getMatchData(urls):
                     set1_team1, set1_team2,
                     set2_team1, set2_team2,
                     set3_team1, set3_team2,
-                    match_datetime
+                    parsed_datetime
                 ))
 
                 print(f"Added match: {first_team} vs {second_team}")
@@ -285,16 +345,6 @@ def getMatchData(urls):
             print("Failed:", response.status_code)
 
 
-# Close the database connection when done
-try:
-    getEventData(event_url)
-    getDivisionsForTourney(division_urls)
-    getMatchData(match_urls)
-    
-    # Remove duplicate matches
-    remove_duplicate_matches()
-finally:
-    conn.close()
 
 def remove_duplicate_matches():
     """Remove duplicate matches where team1_id and team2_id are swapped"""
@@ -312,8 +362,13 @@ def remove_duplicate_matches():
         SELECT m1.matchId
         FROM matches m1
         JOIN matches m2 ON (
-            m1.team1_id = m2.team2_id 
-            AND m1.team2_id = m2.team1_id 
+            (
+                m1.team1_id = m2.team2_id 
+                AND m1.team2_id = m2.team1_id )
+            OR (
+                m1.team1_id = m2.team1_id 
+                AND m1.team2_id = m2.team2_id
+            )
             AND m1.bracket = m2.bracket
             AND m1.match_datetime = m2.match_datetime
             AND m1.matchId > m2.matchId
@@ -330,7 +385,18 @@ def remove_duplicate_matches():
     cursor.execute("SELECT COUNT(*) FROM matches")
     total_matches = cursor.fetchone()[0]
     print(f"Total matches remaining: {total_matches}")
+            
 
 
-
+# Close the database connection when done
+try:
+    event_urls = getEventList()
+    getEventData(event_urls)
+    getDivisionsForTourney(division_urls)
+    getMatchData(match_urls)
+    
+    # Remove duplicate matches
+    remove_duplicate_matches()
+finally:
+    conn.close()
 

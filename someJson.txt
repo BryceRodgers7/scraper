@@ -1,0 +1,1931 @@
+
+{
+    "value": [
+        {
+            "eventId": null,
+            "eventSchedulerId": 20152,
+            "name": "2025 adidas Lone Star Classic 4 15O,16OULP, 17s",
+            "locationName": "Kay Bailey Hutchison Convention Center",
+            "hostName": null,
+            "startDate": "2025-04-25T00:00:00",
+            "endDate": "2025-04-27T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzY5NzE90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Dallas",
+                "state": {
+                    "stateId": 43,
+                    "countryId": 1,
+                    "name": "Texas",
+                    "abbreviation": "TX",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 4,
+                "name": "Lone Star (LS)",
+                "code": "LS",
+                "orderIndex": 24
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 20072,
+            "name": "2025 adidas Lone Star Classic 3 15ACLPSU,16AC",
+            "locationName": "Kay Bailey Hutchison Convention Center",
+            "hostName": null,
+            "startDate": "2025-04-18T00:00:00",
+            "endDate": "2025-04-20T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzY5NzA90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Dallas",
+                "state": {
+                    "stateId": 43,
+                    "countryId": 1,
+                    "name": "Texas",
+                    "abbreviation": "TX",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 4,
+                "name": "Lone Star (LS)",
+                "code": "LS",
+                "orderIndex": 24
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 20083,
+            "name": "2025 adidas Windy City NQ (11-17s) ",
+            "locationName": "McCormick Place Chicago",
+            "hostName": null,
+            "startDate": "2025-04-18T00:00:00",
+            "endDate": "2025-04-20T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzgwMjI90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Chicago",
+                "state": {
+                    "stateId": 13,
+                    "countryId": 1,
+                    "name": "Illinois",
+                    "abbreviation": "IL",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 25,
+                "name": "Great Lakes (GL)",
+                "code": "GL",
+                "orderIndex": 15
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 20055,
+            "name": "2025 Northeast Qualifier 3 (15OU, 16OUL, 17ULA)",
+            "locationName": "Pennsylvania Convention Center",
+            "hostName": null,
+            "startDate": "2025-04-18T00:00:00",
+            "endDate": "2025-04-20T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzcwNDM90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Philadelphia",
+                "state": {
+                    "stateId": 38,
+                    "countryId": 1,
+                    "name": "Pennsylvania",
+                    "abbreviation": "PA",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 31,
+                "name": "Keystone (KE)",
+                "code": "KE",
+                "orderIndex": 22
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 20054,
+            "name": "2025 Northeast Qualifier 4 (13 LA, 14 LA)",
+            "locationName": "Gaylord National Harbor",
+            "hostName": null,
+            "startDate": "2025-04-18T00:00:00",
+            "endDate": "2025-04-20T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzcwNDE90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "",
+                "state": {
+                    "stateId": 20,
+                    "countryId": 1,
+                    "name": "Maryland",
+                    "abbreviation": "MD",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 17,
+                "name": "Chesapeake (CH)",
+                "code": "CH",
+                "orderIndex": 7
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 20074,
+            "name": "2025 Show Me Weekend 2 (10C,11-14s,15L/A, 18C)",
+            "locationName": "Kansas City Convention Center/Hy-vee Arena",
+            "hostName": null,
+            "startDate": "2025-04-18T00:00:00",
+            "endDate": "2025-04-20T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzgwMzY90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Kansas City",
+                "state": {
+                    "stateId": 25,
+                    "countryId": 1,
+                    "name": "Missouri",
+                    "abbreviation": "MO",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 27,
+                "name": "Heart of America (HA)",
+                "code": "HA",
+                "orderIndex": 18
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 19987,
+            "name": "2025 Show Me Weekend 1 (15O/U, 16s-17s)",
+            "locationName": "Kansas City Convention Center/Hy-vee Arena",
+            "hostName": null,
+            "startDate": "2025-04-12T00:00:00",
+            "endDate": "2025-04-14T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzgwMzg90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Kansas City",
+                "state": {
+                    "stateId": 25,
+                    "countryId": 1,
+                    "name": "Missouri",
+                    "abbreviation": "MO",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 27,
+                "name": "Heart of America (HA)",
+                "code": "HA",
+                "orderIndex": 18
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 19976,
+            "name": "2025 adidas Lone Star Classic 2 13s-14s",
+            "locationName": "Kay Bailey Hutchison Convention Center",
+            "hostName": null,
+            "startDate": "2025-04-11T00:00:00",
+            "endDate": "2025-04-13T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzY5Njk90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Dallas",
+                "state": {
+                    "stateId": 43,
+                    "countryId": 1,
+                    "name": "Texas",
+                    "abbreviation": "TX",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 4,
+                "name": "Lone Star (LS)",
+                "code": "LS",
+                "orderIndex": 24
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 19940,
+            "name": "2025 Northeast Qualifier 2-11,12,13/14OU,15LA,16A",
+            "locationName": "Pennsylvania Convention Center",
+            "hostName": null,
+            "startDate": "2025-04-11T00:00:00",
+            "endDate": "2025-04-13T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzcwNDQ90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Philadelphia",
+                "state": {
+                    "stateId": 38,
+                    "countryId": 1,
+                    "name": "Pennsylvania",
+                    "abbreviation": "PA",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 31,
+                "name": "Keystone (KE)",
+                "code": "KE",
+                "orderIndex": 22
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 20018,
+            "name": "2025 Salt Lake City Showdown WK2 (13-15s) ",
+            "locationName": "Salt Palace Convention Center",
+            "hostName": null,
+            "startDate": "2025-04-11T00:00:00",
+            "endDate": "2025-04-13T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzgwMzI90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Salt Lake City",
+                "state": {
+                    "stateId": 44,
+                    "countryId": 1,
+                    "name": "Utah",
+                    "abbreviation": "UT",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 28,
+                "name": "Intermountain (IM)",
+                "code": "IM",
+                "orderIndex": 20
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 19848,
+            "name": "2025 adidas Lone Star Classic 1 10s, 11s-12s",
+            "locationName": "Kay Bailey Hutchison Convention Center",
+            "hostName": null,
+            "startDate": "2025-04-05T00:00:00",
+            "endDate": "2025-04-07T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzY5Njg90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Dallas",
+                "state": {
+                    "stateId": 43,
+                    "countryId": 1,
+                    "name": "Texas",
+                    "abbreviation": "TX",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 4,
+                "name": "Lone Star (LS)",
+                "code": "LS",
+                "orderIndex": 24
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 19890,
+            "name": "2025 Salt Lake City Showdown WK1 (11-12s, 16-17s)",
+            "locationName": "Salt Palace Convention Center",
+            "hostName": null,
+            "startDate": "2025-04-05T00:00:00",
+            "endDate": "2025-04-07T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzgwMzA90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Salt Lake City",
+                "state": {
+                    "stateId": 44,
+                    "countryId": 1,
+                    "name": "Utah",
+                    "abbreviation": "UT",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 28,
+                "name": "Intermountain (IM)",
+                "code": "IM",
+                "orderIndex": 20
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 17802,
+            "name": "25 Nike Mideast Qualifier Indy (16O/U/S, 17-18s)",
+            "locationName": "Indianapolis Convention Center",
+            "hostName": null,
+            "startDate": "2025-03-21T00:00:00",
+            "endDate": "2025-03-23T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzY3OTM90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Indianapolis",
+                "state": {
+                    "stateId": 14,
+                    "countryId": 1,
+                    "name": "Indiana",
+                    "abbreviation": "IN",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 54,
+                "name": "Hoosier (HO)",
+                "code": "HO",
+                "orderIndex": 19
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 19439,
+            "name": "2025 Northeast Qualifier 1 (18OULA, 17O)",
+            "locationName": "Pennsylvania Convention Center",
+            "hostName": null,
+            "startDate": "2025-03-14T00:00:00",
+            "endDate": "2025-03-16T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzcwNDA90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Philadelphia",
+                "state": {
+                    "stateId": 38,
+                    "countryId": 1,
+                    "name": "Pennsylvania",
+                    "abbreviation": "PA",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 31,
+                "name": "Keystone (KE)",
+                "code": "KE",
+                "orderIndex": 22
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 17803,
+            "name": "25 Nike Mideast Qualifier STL(14O/U, 15s, 16A/L/S)",
+            "locationName": "America Center Convention ",
+            "hostName": null,
+            "startDate": "2025-03-14T00:00:00",
+            "endDate": "2025-03-16T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzY3OTY90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "St. Louis",
+                "state": {
+                    "stateId": 25,
+                    "countryId": 1,
+                    "name": "Missouri",
+                    "abbreviation": "MO",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 24,
+                "name": "Gateway (GW)",
+                "code": "GW",
+                "orderIndex": 14
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 17870,
+            "name": "25 Nike Mideast Qualifier STL (11-13s, 14A/L/S)",
+            "locationName": "America Center Convention ",
+            "hostName": null,
+            "startDate": "2025-03-07T00:00:00",
+            "endDate": "2025-03-09T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzY3OTU90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "St. Louis",
+                "state": {
+                    "stateId": 25,
+                    "countryId": 1,
+                    "name": "Missouri",
+                    "abbreviation": "MO",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 24,
+                "name": "Gateway (GW)",
+                "code": "GW",
+                "orderIndex": 14
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 19118,
+            "name": "2025 Sunshine Classic Weekend Two (15 O & U,16-18)",
+            "locationName": "Orange County Convention Center - North/ South Concourse",
+            "hostName": null,
+            "startDate": "2025-02-28T00:00:00",
+            "endDate": "2025-03-02T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzc4NTU90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Orlando",
+                "state": {
+                    "stateId": 9,
+                    "countryId": 1,
+                    "name": "Florida",
+                    "abbreviation": "FL",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 21,
+                "name": "Florida (FL)",
+                "code": "FL",
+                "orderIndex": 12
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 18996,
+            "name": "2025 Sunshine Classic Weekend One (10-14,15 A & L)",
+            "locationName": "Orange County Convention Center - North/ South Concourse",
+            "hostName": null,
+            "startDate": "2025-02-22T00:00:00",
+            "endDate": "2025-02-24T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzc4NTQ90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Orlando",
+                "state": {
+                    "stateId": 9,
+                    "countryId": 1,
+                    "name": "Florida",
+                    "abbreviation": "FL",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 21,
+                "name": "Florida (FL)",
+                "code": "FL",
+                "orderIndex": 12
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 19060,
+            "name": "SVT's Southeast 18s Qualifier & Invitational - SEQ",
+            "locationName": "GICC",
+            "hostName": null,
+            "startDate": "2025-02-21T00:00:00",
+            "endDate": "2025-02-23T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzY4ODA90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "",
+                "state": {
+                    "stateId": 10,
+                    "countryId": 1,
+                    "name": "Georgia",
+                    "abbreviation": "GA",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 41,
+                "name": "Southern (SO)",
+                "code": "SO",
+                "orderIndex": 37
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 18615,
+            "name": "2025 AVC 18's National Qualifier & AVC 11s-17s",
+            "locationName": "Dallas Convention Center",
+            "hostName": null,
+            "startDate": "2025-01-31T00:00:00",
+            "endDate": "2025-02-02T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzcxNTM90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Dallas",
+                "state": {
+                    "stateId": 43,
+                    "countryId": 1,
+                    "name": "Texas",
+                    "abbreviation": "TX",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 10,
+                "name": "North Texas (NT)",
+                "code": "NT",
+                "orderIndex": 28
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 18616,
+            "name": "Ohio Valley 18s Qualifier, OVR Boys WinterFest",
+            "locationName": "Greater Columbus Convention Center",
+            "hostName": null,
+            "startDate": "2025-01-31T00:00:00",
+            "endDate": "2025-02-02T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzcwNDg90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Columbus",
+                "state": {
+                    "stateId": 35,
+                    "countryId": 1,
+                    "name": "Ohio",
+                    "abbreviation": "OH",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 36,
+                "name": "Ohio Valley (OV)",
+                "code": "OV",
+                "orderIndex": 30
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 18462,
+            "name": "2025 Salt Lake City 18s Showdown",
+            "locationName": "Salt Palace Convention Center",
+            "hostName": null,
+            "startDate": "2025-01-24T00:00:00",
+            "endDate": "2025-01-26T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzgwMjg90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Salt Lake City",
+                "state": {
+                    "stateId": 44,
+                    "countryId": 1,
+                    "name": "Utah",
+                    "abbreviation": "UT",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 28,
+                "name": "Intermountain (IM)",
+                "code": "IM",
+                "orderIndex": 20
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 18331,
+            "name": "2025 ASICS Kansas City MLK Tournament",
+            "locationName": "Kansas City Convention Center - Bartle Hall",
+            "hostName": null,
+            "startDate": "2025-01-18T00:00:00",
+            "endDate": "2025-01-20T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzc3Mjk90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Kansas City",
+                "state": {
+                    "stateId": 25,
+                    "countryId": 1,
+                    "name": "Missouri",
+                    "abbreviation": "MO",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 27,
+                "name": "Heart of America (HA)",
+                "code": "HA",
+                "orderIndex": 18
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 17730,
+            "name": "2025 Windy City Girl's 18's National Qualifier ",
+            "locationName": "Schaumburg Renaissance Convention Center ",
+            "hostName": null,
+            "startDate": "2025-01-18T00:00:00",
+            "endDate": "2025-01-20T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzc1NTE90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Schaumburg",
+                "state": {
+                    "stateId": 13,
+                    "countryId": 1,
+                    "name": "Illinois",
+                    "abbreviation": "IL",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 25,
+                "name": "Great Lakes (GL)",
+                "code": "GL",
+                "orderIndex": 15
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        },
+        {
+            "eventId": null,
+            "eventSchedulerId": 18362,
+            "name": "2025 adidas Lone Star Classic 18s",
+            "locationName": "Austin Convention Center",
+            "hostName": null,
+            "startDate": "2025-01-17T00:00:00",
+            "endDate": "2025-01-19T00:00:00",
+            "registrationOpenDate": null,
+            "registrationCloseDate": null,
+            "isRegistrationOpen": null,
+            "isRegistrationUpcoming": false,
+            "isOneDayEvent": false,
+            "isPastEvent": true,
+            "isSchedulerPosted": true,
+            "eventSchedulerKey": "PTAwMDAwMzY5NTA90",
+            "isSchedulerOnly": true,
+            "address": {
+                "line1": null,
+                "line2": null,
+                "city": "Austin",
+                "state": {
+                    "stateId": 43,
+                    "countryId": 1,
+                    "name": "Texas",
+                    "abbreviation": "TX",
+                    "usavForeignExemptionApply": false
+                },
+                "zip": null
+            },
+            "age": {
+                "minAge": null,
+                "maxAge": null
+            },
+            "eventType": {
+                "eventTypeId": 11,
+                "eventMetaType": {
+                    "eventMetaTypeId": 30002,
+                    "description": "Junior Volleyball",
+                    "allowsCoed": false,
+                    "orderIndex": 1,
+                    "coedTeamCodePrefix": "C",
+                    "isGeneric": false,
+                    "isJunior": true,
+                    "isAdult": false
+                },
+                "description": "National Qualifier - Girls",
+                "orderIndex": 9
+            },
+            "affiliation": {
+                "eventAffiliationId": 250004,
+                "description": "USAV",
+                "orderIndex": 0,
+                "isAssignable": true,
+                "defaultRegionLabel": "Region",
+                "isUSAV": true,
+                "hasRegions": true
+            },
+            "region": {
+                "eventAffiliationId": 250004,
+                "regionId": 4,
+                "name": "Lone Star (LS)",
+                "code": "LS",
+                "orderIndex": 24
+            },
+            "genderClassTypes": [],
+            "bossOrganizationId": null,
+            "bossOrganizationName": null,
+            "lucidTravelAddress": null,
+            "lucidTravelEnabled": false,
+            "hotelsEnabled": false,
+            "ballerTvEnabled": null,
+            "shopGearEnabled": false,
+            "shopGearAddress": "",
+            "sePlayEnabled": null,
+            "eventHotelOptionId": null
+        }
+    ],
+    "@odata.count": 25
+}
