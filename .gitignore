@@ -19,8 +19,9 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-*.db
+*.db*
 *.zip
+*.json
 
 # Virtual Environment
 venv/

@@ -1,7 +1,7 @@
 import sqlite3
 
 # create elo table
-conn = sqlite3.connect("vbdatav3.db")
+conn = sqlite3.connect("vbdatav4.db")
 cursor = conn.cursor()
 
 def get_starting_elo(team_age):

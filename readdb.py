@@ -97,11 +97,11 @@ def export_team_elo_summary(cursor, output_dir):
 
 def main():
     # Create output directory if it doesn't exist
-    output_dir = "db_exports_v3"
+    output_dir = "db_exports_v4"
     os.makedirs(output_dir, exist_ok=True)
     
     # Connect to the database
-    conn = sqlite3.connect('vbdatav3.db')
+    conn = sqlite3.connect('vbdatav4.db')
     cursor = conn.cursor()
     
     # Get list of all tables
@@ -121,7 +121,7 @@ def main():
     # Close the connection
     conn.close()
     
-    print("\nExport complete! Files are in the 'db_exports_v3' directory.")
+    print("\nExport complete! Files are in the 'db_exports_v4' directory.")
 
 if __name__ == "__main__":
     main()
