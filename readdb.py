@@ -32,7 +32,7 @@ def export_table_to_csv(cursor, table_name, output_dir):
 def export_team_elo_summary(cursor, output_dir):
     """Export joined data showing team ELO ratings with team names and division names"""
     
-    # Query to join the four tables
+    # Query to join the four tables - one row per team with aggregated enrollment data
     query = """
     SELECT 
         t.teamId,
@@ -40,19 +40,16 @@ def export_team_elo_summary(cursor, output_dir):
         t.teamCode,
         t.teamAge,
         t.clubName,
-        d.divisionName,
-        d.eventId,
-        e.matchesWon,
-        e.matchesLost,
-        e.setsWon,
-        e.setsLost,
-        e.finishRank,
-        e.overallRank,
+        COUNT(e.teamId) as total_enrollments,
+        SUM(e.matchesWon) as total_matchesWon,
+        SUM(e.matchesLost) as total_matchesLost,
+        SUM(e.setsWon) as total_setsWon,
+        SUM(e.setsLost) as total_setsLost,
         te.elo
     FROM teams t
     LEFT JOIN enrollments e ON t.teamId = e.teamId
-    LEFT JOIN divisions d ON e.divisionId = d.divisionId
     LEFT JOIN team_elo te ON t.teamId = te.teamId
+    GROUP BY t.teamId, t.teamName, t.teamCode, t.teamAge, t.clubName, te.elo
     ORDER BY te.elo DESC, t.teamName
     """
     
@@ -65,9 +62,8 @@ def export_team_elo_summary(cursor, output_dir):
     
     # Define column headers
     columns = [
-        'teamId', 'teamName', 'teamCode', 'teamAge', 'clubName', 'divisionName', 
-        'eventId', 'matchesWon', 'matchesLost', 'setsWon', 'setsLost', 
-        'finishRank', 'overallRank', 'elo'
+        'teamId', 'teamName', 'teamCode', 'teamAge', 'clubName', 'total_enrollments',
+        'total_matchesWon', 'total_matchesLost', 'total_setsWon', 'total_setsLost', 'elo'
     ]
     
     # Create CSV filename with timestamp
@@ -83,14 +79,14 @@ def export_team_elo_summary(cursor, output_dir):
     print(f"Exported {len(rows)} rows from team ELO summary to {csv_filename}")
     
     # Print some statistics
-    teams_with_elo = sum(1 for row in rows if row[13] is not None)  # elo column (now index 13)
+    teams_with_elo = sum(1 for row in rows if row[10] is not None)  # elo column (index 10)
     teams_without_elo = len(rows) - teams_with_elo
     
     print(f"Teams with ELO ratings: {teams_with_elo}")
     print(f"Teams without ELO ratings: {teams_without_elo}")
     
     if teams_with_elo > 0:
-        elo_values = [row[13] for row in rows if row[13] is not None]  # elo column (now index 13)
+        elo_values = [row[10] for row in rows if row[10] is not None]  # elo column (index 10)
         print(f"Highest ELO: {max(elo_values):.1f}")
         print(f"Lowest ELO: {min(elo_values):.1f}")
         print(f"Average ELO: {sum(elo_values)/len(elo_values):.1f}")

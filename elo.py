@@ -29,6 +29,12 @@ def create_elo_table():
     conn.commit()
     print("ELO table created")
 
+def delete_elo_table():
+    """Delete the team_elo table to allow recalculation"""
+    cursor.execute("DROP TABLE IF EXISTS team_elo")
+    conn.commit()
+    print("ELO table deleted")
+
 # ELO 
 def expected_score(rating_a, rating_b):
     return 1 / (1 + 10 ** ((rating_b - rating_a) / 400))
@@ -64,42 +70,76 @@ def report_elo_rankings():
 # This ensures ELO calculations are processed chronologically
 
 def process_matches():
-    # run through matches and update elo
+    """Process all matches and calculate ELO ratings in memory"""
+    print("Loading matches and team data...")
+    
+    # Load all matches ordered by datetime
     cursor.execute("SELECT * FROM matches ORDER BY match_datetime ASC")
     matches = cursor.fetchall()
-
-    for match in matches:
+    
+    # Load all teams to get their ages for starting ELO
+    cursor.execute("SELECT teamId, teamAge FROM teams")
+    teams_data = {row[0]: row[1] for row in cursor.fetchall()}
+    
+    # Load existing ELO ratings from database
+    cursor.execute("SELECT teamId, elo FROM team_elo")
+    existing_elos = {row[0]: row[1] for row in cursor.fetchall()}
+    
+    # Initialize ELO dictionary in memory with existing ratings
+    team_elos = existing_elos.copy()
+    
+    print(f"Found {len(existing_elos)} existing ELO ratings in database")
+    print(f"Processing {len(matches)} matches...")
+    
+    for i, match in enumerate(matches):
         match_id, bracket, team1_id, team2_id, team2_won, *scores = match
-
-        # Get current ELOs (or insert age-based defaults)
+        
+        # Initialize ELOs for teams if they don't exist (use existing or calculate new)
         for team_id in (team1_id, team2_id):
-            cursor.execute("SELECT elo FROM team_elo WHERE teamId = ?", (team_id,))
-            if cursor.fetchone() is None:
-                # Get team age to calculate starting ELO
-                cursor.execute("SELECT teamAge FROM teams WHERE teamId = ?", (team_id,))
-                age_result = cursor.fetchone()
-                team_age = age_result[0] if age_result else None
-                
+            if team_id not in team_elos:
+                team_age = teams_data.get(team_id)
                 starting_elo = get_starting_elo(team_age)
-                cursor.execute("INSERT INTO team_elo (teamId, elo) VALUES (?, ?)", (team_id, starting_elo))
-                # print(f"Created ELO for team {team_id} (age {team_age}): {starting_elo}")
-
-        cursor.execute("SELECT elo FROM team_elo WHERE teamId = ?", (team1_id,))
-        elo1 = cursor.fetchone()[0]
-        cursor.execute("SELECT elo FROM team_elo WHERE teamId = ?", (team2_id,))
-        elo2 = cursor.fetchone()[0]
-
+                team_elos[team_id] = starting_elo
+                # print(f"Initialized ELO for team {team_id} (age {team_age}): {starting_elo}")
+        
+        # Get current ELOs
+        elo1 = team_elos[team1_id]
+        elo2 = team_elos[team2_id]
+        
+        # Calculate new ELOs
         result1 = 0.0 if team2_won else 1.0
         new_elo1, new_elo2 = update_elo(elo1, elo2, result1)
+        
+        # Update in-memory ELOs
+        team_elos[team1_id] = new_elo1
+        team_elos[team2_id] = new_elo2
+        
+        # Progress indicator
+        if (i + 1) % 1000 == 0:
+            print(f"Processed {i + 1}/{len(matches)} matches...")
+    
+    print(f"ELO calculations complete. Calculated ratings for {len(team_elos)} teams.")
+    return team_elos
 
-        # Update DB
-        cursor.execute("UPDATE team_elo SET elo = ? WHERE teamId = ?", (new_elo1, team1_id))
-        cursor.execute("UPDATE team_elo SET elo = ? WHERE teamId = ?", (new_elo2, team2_id))
-
+def save_elos_to_database(team_elos):
+    """Save calculated ELO ratings to the database"""
+    print("Saving ELO ratings to database...")
+    
+    # Prepare data for batch insert/update
+    elo_data = [(team_id, elo) for team_id, elo in team_elos.items()]
+    
+    # Batch insert or replace all ELO ratings
+    cursor.executemany("INSERT OR REPLACE INTO team_elo (teamId, elo) VALUES (?, ?)", elo_data)
     conn.commit()
+    
+    print(f"Saved {len(elo_data)} ELO ratings to database.")
+
+# Uncomment the line below to delete existing ELO data and start fresh
+delete_elo_table()
 
 create_elo_table()
-process_matches()
+team_elos = process_matches()
+save_elos_to_database(team_elos)
 report_elo_rankings()
 
 conn.close()

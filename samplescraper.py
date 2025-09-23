@@ -111,47 +111,73 @@ cursor = conn.cursor()
 division_urls = []
 match_urls = []
 
+event_list = []
 
+def initEventUrls():
+    event_list.append('https://www.advancedeventsystems.com/api/landing/events?$count=true&$filter=((startDate+lt+2025-09-01T05:00:00%2B00:00+and+endDate+ge+2024-09-01T05:00:00%2B00:00)+and+isPastEvent+eq+true+and+eventType%2FeventTypeId+eq+5)&$format=json&$orderby=startDate+desc,name&$top=100')
+    event_list.append('https://www.advancedeventsystems.com/api/landing/events?$count=true&$filter=((startDate+lt+2025-09-01T05:00:00%2B00:00+and+endDate+ge+2024-09-01T05:00:00%2B00:00)+and+isPastEvent+eq+true+and+eventType%2FeventTypeId+eq+5)&$format=json&$orderby=startDate+desc,name&$skip=100&$top=100')
+    event_list.append('https://www.advancedeventsystems.com/api/landing/events?$count=true&$filter=((startDate+lt+2025-09-01T05:00:00%2B00:00+and+endDate+ge+2024-09-01T05:00:00%2B00:00)+and+isPastEvent+eq+true+and+eventType%2FeventTypeId+eq+5)&$format=json&$orderby=startDate+desc,name&$skip=200&$top=100')
+    event_list.append('https://www.advancedeventsystems.com/api/landing/events?$count=true&$filter=((startDate+lt+2025-09-01T05:00:00%2B00:00+and+endDate+ge+2024-09-01T05:00:00%2B00:00)+and+isPastEvent+eq+true+and+eventType%2FeventTypeId+eq+5)&$format=json&$orderby=startDate+desc,name&$skip=300&$top=100')
+    event_list.append('https://www.advancedeventsystems.com/api/landing/events?$count=true&$filter=((startDate+lt+2025-09-01T05:00:00%2B00:00+and+endDate+ge+2024-09-01T05:00:00%2B00:00)+and+isPastEvent+eq+true+and+eventType%2FeventTypeId+eq+5)&$format=json&$orderby=startDate+desc,name&$skip=400&$top=100')
+    event_list.append('https://www.advancedeventsystems.com/api/landing/events?$count=true&$filter=((startDate+lt+2025-09-01T05:00:00%2B00:00+and+endDate+ge+2024-09-01T05:00:00%2B00:00)+and+isPastEvent+eq+true+and+eventType%2FeventTypeId+eq+5)&$format=json&$orderby=startDate+desc,name&$skip=500&$top=100')
+    event_list.append('https://www.advancedeventsystems.com/api/landing/events?$count=true&$filter=((startDate+lt+2025-09-01T05:00:00%2B00:00+and+endDate+ge+2024-09-01T05:00:00%2B00:00)+and+isPastEvent+eq+true+and+eventType%2FeventTypeId+eq+5)&$format=json&$orderby=startDate+desc,name&$skip=600&$top=100')
+    event_list.append('https://www.advancedeventsystems.com/api/landing/events?$count=true&$filter=((startDate+lt+2025-09-01T05:00:00%2B00:00+and+endDate+ge+2024-09-01T05:00:00%2B00:00)+and+isPastEvent+eq+true+and+eventType%2FeventTypeId+eq+5)&$format=json&$orderby=startDate+desc,name&$skip=700&$top=100')
+    event_list.append('https://www.advancedeventsystems.com/api/landing/events?$count=true&$filter=((startDate+lt+2025-09-01T05:00:00%2B00:00+and+endDate+ge+2024-09-01T05:00:00%2B00:00)+and+isPastEvent+eq+true+and+eventType%2FeventTypeId+eq+5)&$format=json&$orderby=startDate+desc,name&$skip=800&$top=100')
 
-def getEventList():
+def getEventKeys():
 
     # url = 'https://www.advancedeventsystems.com/api/landing/events?$count=true&$filter=(isSchedulerPosted+eq+true+and+(startDate+lt+2025-09-01T05:00:00%2B00:00+and+endDate+ge+2024-09-01T05:00:00%2B00:00)+and+isPastEvent+eq+true+and+eventType%2FeventTypeId+eq+11)&$format=json&$orderby=startDate+desc,name&$top=100'
-    url = 'https://www.advancedeventsystems.com/api/landing/events?$count=true&$filter=(isSchedulerPosted+eq+true+and+(startDate+lt+2025-09-01T05:00:00%2B00:00+and+endDate+ge+2024-09-01T05:00:00%2B00:00)+and+isPastEvent+eq+true+and+affiliation%2FeventAffiliationId+eq+250004+and+address%2Fstate%2FstateId+eq+43)&$format=json&$orderby=startDate+desc,name&$top=100'
 
-    print(f"Fetching event data from: {url}")
+    
     
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36", 
         "Accept": "application/json, text/plain, */*",
     }
 
+    # Fetch all existing event keys from the database
+    print("Fetching existing event keys from database...")
+    cursor.execute("SELECT eventId FROM events")
+    existing_event_ids = set(row[0] for row in cursor.fetchall())
+    print(f"Found {len(existing_event_ids)} existing events in database")
+
     event_urls = []
     
     try:
-        response = requests.get(url, headers=headers)
-        
-        if response.status_code == 200:
-            data = response.json()
+        for url in event_list:
+            print(f"Fetching event data from: {url}")
+            response = requests.get(url, headers=headers)
             
-            # Extract eventSchedulerKey values from the 'value' array
-            event_keys = []
-            if 'value' in data and isinstance(data['value'], list):
-                for event in data['value']:
-                    if 'eventSchedulerKey' in event and event['eventSchedulerKey']:
-                        event_keys.append(event['eventSchedulerKey'])
-            
-            print(f"Total eventSchedulerKey values found: {len(event_keys)}")
+            if response.status_code == 200:
+                data = response.json()
+                
+                # Extract eventSchedulerKey values from the 'value' array
+                event_keys = []
+                if 'value' in data and isinstance(data['value'], list):
+                    for event in data['value']:
+                        if 'eventSchedulerKey' in event and event['eventSchedulerKey']:
+                            event_keys.append(event['eventSchedulerKey'])
+                
+                print(f"Total eventSchedulerKey values found: {len(event_keys)}")
 
-            for event_key in event_keys:
-                event_url = f'https://results.advancedeventsystems.com/api/event/{event_key}'
-                event_urls.append(event_url)
-                print(event_url)
+                skipped_count = 0
+                added_count = 0
+                
+                for event_key in event_keys:
+                    # Check if this event key already exists in the database
+                    if event_key in existing_event_ids:
+                        skipped_count += 1
+                    else:
+                        event_url = f'https://results.advancedeventsystems.com/api/event/{event_key}'
+                        event_urls.append(event_url)
+                        added_count += 1
+                
+                print(f"Skipped {skipped_count} existing events, added {added_count} new events")
 
-            return event_urls
-            
-        else:
-            print(f"Failed to fetch data: HTTP {response.status_code}")
-            return event_urls
+            else:
+                print(f"Failed to fetch data: HTTP {response.status_code}")
+                   
+        return event_urls
     except Exception as e:
         print(f"Error trying to get event list: {e}")
         return event_urls
@@ -470,7 +496,8 @@ def remove_duplicate_matches():
 
 # Close the database connection when done
 try:
-    event_urls = getEventList()
+    initEventUrls()
+    event_urls = getEventKeys()
     getEventData(event_urls)
     getDivisionsForTourney(division_urls)
     getMatchData(match_urls)
